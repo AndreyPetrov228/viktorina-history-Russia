@@ -8,25 +8,6 @@ from category_win import CategoryWin
 class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
-        # База данных вопросов, вариантов ответов и индексов правильных ответов
-        self.questions = [
-            {
-                "question": "Какая планета самая близкая к Солнцу?",
-                "options": ["Венера", "Марс", "Меркурий", "Земля"],
-                "correct": 2
-            },
-            {
-                "question": "Какой язык программирования использует PyQt5?",
-                "options": ["Java", "Python", "C++", "JavaScript"],
-                "correct": 1
-            },
-            {
-                "question": "Что из этого является столицей Франции?",
-                "options": ["Берлин", "Лондон", "Рим", "Париж"],
-                "correct": 3
-            }
-        ]
-  
         self.current_question = 0
         self.score = 0
         self.initUI()
